@@ -1,10 +1,20 @@
 function fibonacci() {
-    const fib = [1, 1];
-    for (let i = 2 ; i < 100 ; i++) {
+    let fib = [1, 1];
+    for (let i = 2 ; i < 10 ; i++) {
         fib[i] = fib[i - 1] + fib[i - 2];
     }
-    return fib
+    console.log("Fib:", fib)
 }
 
-const fibonacci100 = fibonacci()
-console.log(fibonacci100)
+fibonacci()
+
+function newFibonacci() {
+    let newFib = [1, 1];
+    for (let i = 2; i < 10; i++) {
+        let nextFib = newFib[i - 1] + newFib[i - 2];
+        newFib.push(nextFib)
+    }
+    console.log("newFib:", newFib)
+}
+
+newFibonacci()
